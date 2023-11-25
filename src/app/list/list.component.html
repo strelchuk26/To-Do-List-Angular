@@ -1,0 +1,11 @@
+<div class="container">
+    <h1>MY TO DO LIST</h1>
+    <div class="wrapper">
+        <div>
+            <ul class="todo_list">
+                <app-task *ngFor="let i of tasks" [task]="i"></app-task>
+            </ul>
+        </div>
+        <app-add-new-task (createEvent)="addTask($event)"></app-add-new-task>
+    </div>
+</div>

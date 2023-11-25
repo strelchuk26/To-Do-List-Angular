@@ -1,0 +1,55 @@
+.important::after {
+    content: "\00a0!";
+    color: red;
+}
+
+li {
+    color: #fff;
+    display: block;
+    background-color: #762aaa;
+    padding: 12px;
+    list-style: none;
+    line-height: 30px;
+    transition: 0.3s;
+    overflow: auto;
+}
+
+li .deadline {
+    background: rgba( 255, 255, 255, 0.2 );
+    color: #fff;
+    border-radius: 3px;
+    padding: 2px 4px;
+    margin-left: 10px;
+}
+
+li img {
+    vertical-align: middle;
+}
+
+li img:nth-child(1) {
+    margin-right: 10px;
+    filter: invert(100%);
+}
+
+li img.deleteIcon {
+    float: right;
+}
+
+li:hover {
+    filter: brightness(110%);
+    cursor: pointer;
+    padding: 12px 20px;
+    padding: 12px 12px 12px 20px;
+}
+
+li.done {
+    background: rgba( 0, 0, 0, 0.1 );
+    color: #8f8f8f;
+    text-decoration: line-through;
+    text-decoration-thickness: 2px;
+    transition: 0.5s;
+}
+
+li.done .deadline {
+    color: #8f8f8f;
+}

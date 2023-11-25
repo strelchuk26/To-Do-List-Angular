@@ -1,0 +1,6 @@
+<li [ngClass]="{'done' : task.isDone}">
+    <img (click)="makeDone($event, task)" [src]="task.isDone ? 'assets/icons/checked.png' : 'assets/icons/unchecked.png'">
+    <span [ngClass]="{'important' : task.isImportant}" class="text-wrapper">{{task.text}}</span>
+    <span *ngIf="isDateValid(task.deadline)" class="deadline">{{task.deadline?.toLocaleDateString()}}</span>
+    <img (click)="deleteTask(task.id)" class="deleteIcon" [src]="'assets/icons/delete.png'">
+</li>

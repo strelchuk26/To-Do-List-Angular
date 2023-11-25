@@ -1,0 +1,19 @@
+<form [formGroup]="creationForm" (ngSubmit)="onSubmit()">
+    <div class="actions">
+        <div class="inputs">
+            <input type="text" placeholder="ENTER TEXT" formControlName="text">
+            <input type="date" placeholder="DEADLINE" formControlName="deadline">
+            <div class="is-important">
+                <div>
+                    <p>IMPORTANT</p>
+                </div>
+                <div>
+                    <input type="checkbox" formControlName="isImportant">
+                </div>
+            </div>
+            <div class="buttons">
+                <button type="submit">CREATE</button>
+            </div>
+        </div>
+    </div>
+</form>

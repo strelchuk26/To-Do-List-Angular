@@ -1,0 +1,11 @@
+* {
+    font-family: 'Inter', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    background: rgb(84, 9, 121);
+    background: linear-gradient(90deg, rgba(84, 9, 121, 1) 0%, rgb(153, 76, 220) 100%);
+}
